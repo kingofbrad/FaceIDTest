@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct FaceIDTestApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
+    @StateObject var appContext = AppContext()
+        
+        var body: some Scene {
+            WindowGroup {
+                ContentView(appContext: AppContext())
+            }
         }
-    }
 }

@@ -11,9 +11,7 @@
 		FAACB62D2909A63000CFBCA6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAACB62C2909A63000CFBCA6 /* ContentView.swift */; };
 		FAACB62F2909A63200CFBCA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAACB62E2909A63200CFBCA6 /* Assets.xcassets */; };
 		FAACB6322909A63200CFBCA6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAACB6312909A63200CFBCA6 /* Preview Assets.xcassets */; };
-		FAACB63C2909A63200CFBCA6 /* FaceIDTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAACB63B2909A63200CFBCA6 /* FaceIDTestTests.swift */; };
-		FAACB6462909A63200CFBCA6 /* FaceIDTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAACB6452909A63200CFBCA6 /* FaceIDTestUITests.swift */; };
-		FAACB6482909A63200CFBCA6 /* FaceIDTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAACB6472909A63200CFBCA6 /* FaceIDTestUITestsLaunchTests.swift */; };
+		FAACB6552909A66000CFBCA6 /* FaceIDViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAACB6542909A66000CFBCA6 /* FaceIDViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,10 +38,8 @@
 		FAACB62E2909A63200CFBCA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAACB6312909A63200CFBCA6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FAACB6372909A63200CFBCA6 /* FaceIDTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FaceIDTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FAACB63B2909A63200CFBCA6 /* FaceIDTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceIDTestTests.swift; sourceTree = "<group>"; };
 		FAACB6412909A63200CFBCA6 /* FaceIDTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FaceIDTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FAACB6452909A63200CFBCA6 /* FaceIDTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceIDTestUITests.swift; sourceTree = "<group>"; };
-		FAACB6472909A63200CFBCA6 /* FaceIDTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceIDTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FAACB6542909A66000CFBCA6 /* FaceIDViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceIDViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,8 +71,6 @@
 			isa = PBXGroup;
 			children = (
 				FAACB6292909A63000CFBCA6 /* FaceIDTest */,
-				FAACB63A2909A63200CFBCA6 /* FaceIDTestTests */,
-				FAACB6442909A63200CFBCA6 /* FaceIDTestUITests */,
 				FAACB6282909A63000CFBCA6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -98,6 +92,7 @@
 				FAACB62C2909A63000CFBCA6 /* ContentView.swift */,
 				FAACB62E2909A63200CFBCA6 /* Assets.xcassets */,
 				FAACB6302909A63200CFBCA6 /* Preview Content */,
+				FAACB6542909A66000CFBCA6 /* FaceIDViewModel.swift */,
 			);
 			path = FaceIDTest;
 			sourceTree = "<group>";
@@ -108,23 +103,6 @@
 				FAACB6312909A63200CFBCA6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		FAACB63A2909A63200CFBCA6 /* FaceIDTestTests */ = {
-			isa = PBXGroup;
-			children = (
-				FAACB63B2909A63200CFBCA6 /* FaceIDTestTests.swift */,
-			);
-			path = FaceIDTestTests;
-			sourceTree = "<group>";
-		};
-		FAACB6442909A63200CFBCA6 /* FaceIDTestUITests */ = {
-			isa = PBXGroup;
-			children = (
-				FAACB6452909A63200CFBCA6 /* FaceIDTestUITests.swift */,
-				FAACB6472909A63200CFBCA6 /* FaceIDTestUITestsLaunchTests.swift */,
-			);
-			path = FaceIDTestUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAACB62D2909A63000CFBCA6 /* ContentView.swift in Sources */,
+				FAACB6552909A66000CFBCA6 /* FaceIDViewModel.swift in Sources */,
 				FAACB62B2909A63000CFBCA6 /* FaceIDTestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,7 +245,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAACB63C2909A63200CFBCA6 /* FaceIDTestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,8 +252,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAACB6482909A63200CFBCA6 /* FaceIDTestUITestsLaunchTests.swift in Sources */,
-				FAACB6462909A63200CFBCA6 /* FaceIDTestUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +396,7 @@
 				DEVELOPMENT_TEAM = 488D86WNW2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "We need to unlock your data";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -449,6 +426,7 @@
 				DEVELOPMENT_TEAM = 488D86WNW2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "We need to unlock your data";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
